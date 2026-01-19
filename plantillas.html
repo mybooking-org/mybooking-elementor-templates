@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Previsualización Plantillas Elementor</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .item {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      padding: 12px 16px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #2c2c2c;
+      background: #f3f6f4;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .image-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .image-wrapper img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .caption {
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+    }
+
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <!-- Plantilla 1 -->
+    <div class="item">
+      <div class="header">
+        Mybooking - Bloque - Texto 50% - Imagen 50%
+      </div>
+      <div class="image-wrapper">
+          <img src="plantilla-elementor-texto-izq-imagen-der.png" alt="Plantilla Elementor">
+      </div>  
+      <div class="caption">
+        plantilla-elementor-texto-izq-imagen-der.json
+      </div>
+    </div>
+
+    <!-- Plantilla 2 -->
+    <div class="item">
+      <div class="header">
+        Mybooking - Bloque - Imagen 50% - Texto 50%
+      </div>
+      <div class="image-wrapper">
+        <img src="plantilla-elementor-imagen-izq-texto-der.png" alt="Plantilla Elementor">
+      </div>
+      <div class="caption">
+        plantilla-elementor-imagen-izq-texto-der.json
+      </div>
+    </div>
+
+    <!-- Plantilla 3 -->
+    <div class="item">
+      <div class="header">
+        Mybooking - Bloque - Preguntas frecuentes
+      </div>
+      <div class="image-wrapper">
+        <img src="plantilla-elementor-preguntas-frecuentes.png" alt="Plantilla Elementor">
+      </div>
+      <div class="caption">
+        plantilla-elementor-preguntas-frecuentes.json 
+      </div>
+    </div>
+
+    <!-- Plantilla 4 -->
+    <div class="item">
+      <div class="header">
+        Mybooking - Bloque - Grid productos con enlaces
+      </div>
+      <div class="image-wrapper">
+        <img src="plantilla-elementor-grid-productos-enlaces.png" alt="Plantilla Elementor">
+      </div>
+      <div class="caption">
+        plantilla-elementor-grid-productos-enlaces.json
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
